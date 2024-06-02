@@ -1,6 +1,6 @@
 # 🚀 Java Project Repository
 
-<img src="./assets/java.png" alt="C" width="100" height="150">
+<img src="./assets/java.png" alt="C" width="90" height="150">
 
 Welcome to the Java Project Repository! This repository contains various Java programs and projects designed to help you understand and practice Java programming. Whether you are a beginner looking to learn the basics or an experienced developer seeking advanced concepts, this repository has something for everyone.
 
