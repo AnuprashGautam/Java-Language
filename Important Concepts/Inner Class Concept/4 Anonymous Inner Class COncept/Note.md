@@ -1,4 +1,4 @@
-# What is Anonymous Inner Class in Java?
+# What is Anonymous Inner Class in JAVA?
 
 An anonymous inner class in Java is a class that does not have a name and is used to instantiate objects with certain "on-the-fly" modifications, typically for implementing interfaces or extending classes in a concise way. It is often used for creating instances of listener interfaces in GUI applications or for quickly overriding methods.
 
