@@ -1,3 +1,6 @@
+import vid052.Child;
+import vid052.Parent;
+
 class Parent {
     public static void display() {
         System.out.println("Static method in Parent class.");
