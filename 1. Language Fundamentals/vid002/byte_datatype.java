@@ -1,3 +1,5 @@
+package vid002;
+
 public class byte_datatype {
       public static void main(String[] args) {
             // byte b="string";

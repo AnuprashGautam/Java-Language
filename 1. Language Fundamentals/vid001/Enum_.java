@@ -1,3 +1,5 @@
+package vid001;
+
 public class Enum_{
 
     // Define an enum called Day
