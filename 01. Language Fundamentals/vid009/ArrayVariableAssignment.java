@@ -1,7 +1,9 @@
-package vid9;
-
-public class Array_Var_Assignment {
+public class ArrayVariableAssignment {
     public static void main(String[] args) {
+
+        //Only two things are checked: Type, Dimensions. Size is not checked.
+
+
         int[] i = { 1, 2, 3, 4, 5 };
         char[] c = { 'a', 'b', 'c', 'd', 'e' };
 
