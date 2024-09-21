@@ -1,4 +1,4 @@
-public class Anonymous_Array 
+class AnonymousArrayExample 
 {
 
     public static void sum(int[] x) 
@@ -27,5 +27,10 @@ public class Anonymous_Array
         // new int[][] {{1,2,3,4},{5,6,7,8}};          //We can make multi diemnsional anonymous arrays too.
         
         sum(new int[] {1,2,3,4,5});
+
+
+        //Even we can assign the name to an annonymous array further that turn it into a named array.
+
+        int [] arr=new int[]{1,2,4,5};            //no more a anonymous array.
     }
 }
