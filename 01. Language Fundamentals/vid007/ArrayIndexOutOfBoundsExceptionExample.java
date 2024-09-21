@@ -2,7 +2,7 @@
 
 
 
-public class ArrayIndexOutOfBoundsExample {
+public class ArrayIndexOutOfBoundsExceptionExample {
     public static void main(String[] args) {
         // Creating an array of integers with 5 elements
         int[] numbers = {1, 2, 3, 4, 5};
