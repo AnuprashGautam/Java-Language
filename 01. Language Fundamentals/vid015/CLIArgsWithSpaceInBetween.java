@@ -6,5 +6,6 @@ public class CLIArgsWithSpaceInBetween {
         {
             System.out.println(s);
         }
+        System.out.println("The length of the args array is:"+ args.length);
     }
 }
