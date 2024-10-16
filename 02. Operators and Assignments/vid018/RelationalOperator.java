@@ -1,6 +1,6 @@
 public class RelationalOperator {
     public static void main(String[] args) {
-        //Relational operator can be implemented on primitive datatypes except bollean datatype.
+        //Relational operator can be implemented on primitive datatypes except boolean datatype.
 
         System.out.println(10<20);
         System.out.println('a'<97.5);

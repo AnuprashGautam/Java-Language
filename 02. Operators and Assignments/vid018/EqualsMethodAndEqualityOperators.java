@@ -12,6 +12,7 @@ public class EqualsMethodAndEqualityOperators
         //Malicious codes
         System.out.println(s1==null);
         System.out.println(null==null);
+        System.out.println(null!=null);
         String s3=null;
         System.out.println(s3==null);
     }
