@@ -9,8 +9,9 @@ public class BiwiseOperator {
         System.out.println(5|4);
         System.out.println(5&4);
 
+        // Bitwise complement operator ~ (tilde).
+        // ~(x)=-(x+1)
         System.out.println(~4);
         System.out.println(~-5);
-
     }
 }
