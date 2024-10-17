@@ -15,3 +15,5 @@ public class IfElseStatement
         System.out.println(b);
     }
 }
+
+//This code is working properly because after asiging the false value to the variable b, the if statement is considering the assigned value of the variable b as condition.
