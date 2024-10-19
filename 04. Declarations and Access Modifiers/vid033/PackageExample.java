@@ -1,4 +1,4 @@
-package newpackage.newmodule.submodule;            //Class file exist in the declared path in package statement.
+package largestpackage.mediumpackage.smallpackage;            //Class file exist in the declared path in package statement.
 
 public class PackageExample
 {
