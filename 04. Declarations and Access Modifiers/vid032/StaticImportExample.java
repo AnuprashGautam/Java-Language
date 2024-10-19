@@ -9,7 +9,7 @@ public class StaticImportExample
 {
     public static void main(String[] args) {
 
-        System.out.println(MAX_VALUE);                         // Will the compiletime error.
+        // System.out.println(MAX_VALUE);                         // Will the compiletime error.
 
 
         // System.out.println(Integer.MAX_VALUE);              //Output: 2147483647
