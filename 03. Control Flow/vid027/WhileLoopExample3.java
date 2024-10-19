@@ -7,6 +7,6 @@ public class WhileLoopExample3
         {
             System.out.println("Inside the true block.");
         }
-        System.out.println("Outside the true block.");           //Will get the CE saying unreachable statement.
+        // System.out.println("Outside the true block.");           //Will get the CE saying unreachable statement.
     }
 }

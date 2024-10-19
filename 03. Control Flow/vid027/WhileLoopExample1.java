@@ -5,6 +5,6 @@ public class WhileLoopExample1
         {
             System.out.println("Inside the true block.");
         }
-        System.out.println("Outside the true block.");           //CE: Unreachable statement
+        // System.out.println("Outside the true block.");           //CE: Unreachable statement
     }
 }
