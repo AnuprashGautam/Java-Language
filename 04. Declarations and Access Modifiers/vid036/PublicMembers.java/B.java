@@ -1,4 +1,5 @@
 package b_pack;
+
 import a_pack.A;
 
 class B 

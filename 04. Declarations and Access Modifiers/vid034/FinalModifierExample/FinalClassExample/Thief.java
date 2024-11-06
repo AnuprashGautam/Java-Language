@@ -1,4 +1,4 @@
-//final key word makes all the methods final automatically after applying on the class, but it does not work on the variables.
+//final keyword makes all the methods final automatically after applying on the class, but it does not work on the variables.
 
 
 final class Bank
