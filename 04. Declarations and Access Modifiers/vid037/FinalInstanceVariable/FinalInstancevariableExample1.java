@@ -6,6 +6,5 @@ public class FinalInstancevariableExample1
     {
         FinalInstancevariableExample1 obj=new FinalInstancevariableExample1();
         System.out.println(obj.x);
-
     }
 }
