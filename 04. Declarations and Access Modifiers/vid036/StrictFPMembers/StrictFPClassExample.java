@@ -1,4 +1,4 @@
-abstract strictfp class StrictFPMemberExample
+abstract strictfp class StrictfpMemberExample
 {
     public void m1(){}
     public void m2(){}
@@ -9,7 +9,7 @@ abstract strictfp class StrictFPMemberExample
     public abstract void mz();
 }
 
-public class StrictFPClassExample
+public class StrictfpClassExample
 {
     public static void main(String[] args) {
         System.out.println("StrictFP for class level implementation.");

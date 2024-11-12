@@ -1,4 +1,4 @@
-public class StrictFPMemberExample {
+public class StrictfpMemberExample {
     strictfp public void m1() {
         System.out.println(10.0 / 3);
     }
@@ -9,7 +9,7 @@ public class StrictFPMemberExample {
         System.out.println("StrictFP modifier for the methods.");
 
         // Create an instance and call m1
-        StrictFPMemberExample example = new StrictFPMemberExample();
+        StrictfpMemberExample example = new StrictfpMemberExample();
         example.m1();
     }
 }
