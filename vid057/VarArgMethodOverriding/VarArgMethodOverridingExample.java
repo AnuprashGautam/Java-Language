@@ -21,11 +21,11 @@ public class VarArgMethodOverridingExample
         Parent p=new Parent();
         p.m1(10);
 
-        Child c=new Child();
+        cvink c=new cvink();
         c.m1(10);
         c.m1();                                            //Special Case
 
-        Parent pc=new Child();
+        Parent pc=new cvink();
         pc.m1(10);
     }
 }
