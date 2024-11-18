@@ -1,6 +1,6 @@
 # Data Hiding:
 
-- It menas that the internal data should only by the person after proper validation.
+- It means that the internal data should only be accessed by the person after proper validation.
 - It can be achieved by using `private` access modifier.
 
 
