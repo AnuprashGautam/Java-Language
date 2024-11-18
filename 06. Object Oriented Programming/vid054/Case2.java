@@ -7,7 +7,7 @@ public class Case2
         System.out.println("Object Version");
     }
 
-    public void m1(String s)  // Child
+    public void m1( String s)  // Child
     {
         System.out.println("String Version");
     }
