@@ -1,0 +1,50 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 5,
+  "metadata": {
+    "language_info": {
+      "name": "java"
+    }
+  },
+  "cells": [
+    {
+      "id": "b1c59395-1840-40c8-ab69-fb0615a874bb",
+      "cell_type": "markdown",
+      "source": "# intern() doesn't work the same way as it was usually do before Java 7 version.\n\n- Before Java 7 this programs gives this output\n```java\nfalse\ntrue\n```\n\n- But since Java 7 it gives this output\n```java\ntrue\ntrue\n```",
+      "metadata": {
+        "language": "markdown",
+        "id": "b1c59395-1840-40c8-ab69-fb0615a874bb"
+      }
+    },
+    {
+      "id": "47a0f025-8a03-47f8-ae1c-33fefafecc29",
+      "cell_type": "code",
+      "source": "public class InternMethodDemo {\n    public static void main(String[] args) {\n        String s1=new String(\"durga\");\n        String s2=s1.concat(\"software\");\n        String s3=s2.intern();\n        System.out.println(s2==s3);    // Don't know why it is returning the true.  :/\n        String s4=\"durgasoftware\";\n        System.out.println(s3==s4);\n    }\n}\n",
+      "metadata": {
+        "language": "java",
+        "executionSummary": {
+          "executionOrder": 1,
+          "success": true
+        }
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {},
+          "metadata": {},
+          "execution_count": 1
+        }
+      ]
+    },
+    {
+      "id": "ee09be7d-0af1-4798-87f9-7a7a44e50a40",
+      "cell_type": "markdown",
+      "source": "### ✅ Output of the given Java code\n\n```text\ntrue\ntrue\n```\n\n---\n\n### 🔍 Step-by-step explanation (very important here)\n\nLet’s walk through it line by line.\n\n---\n\n### 1️⃣ Creating strings\n\n```java\nString s1 = new String(\"durga\");\n```\n\n* `\"durga\"` is created in **String Constant Pool (SCP)**.\n* `new String(\"durga\")` creates a **new object in heap**.\n* `s1` → heap object\n\n---\n\n```java\nString s2 = s1.concat(\"software\");\n```\n\n* `concat()` creates a **new String object in heap** → `\"durgasoftware\"`\n* At this moment:\n\n  * Heap contains `\"durgasoftware\"`\n  * SCP does **not** yet contain `\"durgasoftware\"`\n\n---\n\n### 2️⃣ Calling `intern()`\n\n```java\nString s3 = s2.intern();\n```\n\n**What `intern()` does:**\n\n* Checks SCP:\n\n  * If string exists → returns SCP reference\n  * If not → **adds the same heap object reference to SCP** (Java 7+ behavior)\n\nSince `\"durgasoftware\"` is **not present** in SCP:\n\n* JVM adds the **same heap object (`s2`)** to SCP\n* `s3` and `s2` now point to the **same object**\n\n```java\nSystem.out.println(s2 == s3); // true\n```\n\n✅ **true** because both references point to the same object.\n\n---\n\n### 3️⃣ String literal comparison\n\n```java\nString s4 = \"durgasoftware\";\n```\n\n* JVM checks SCP\n* `\"durgasoftware\"` already exists (added during `intern()`)\n* `s4` points to the **same SCP reference**\n\n```java\nSystem.out.println(s3 == s4); // true\n```\n\n✅ **true** because both refer to the same SCP object.\n\n---\n\n### 🧠 Final Summary\n\n| Comparison | Reason                                  | Result |\n| ---------- | --------------------------------------- | ------ |\n| `s2 == s3` | `intern()` returned same heap reference | `true` |\n| `s3 == s4` | Literal reused SCP reference            | `true` |\n\n---\n\n### ⭐ Key Takeaway (Interview Gold)\n\n> From **Java 7 onward**, `intern()` **does not create a new object** if the string is not in SCP — it simply stores the **heap reference** in SCP.\n\nIf you want, I can also show:\n\n* Java 6 behavior difference\n* Memory diagram (heap vs SCP)\n* Similar tricky interview questions\n\nJust tell me 👍\n",
+      "metadata": {
+        "language": "markdown",
+        "id": "ee09be7d-0af1-4798-87f9-7a7a44e50a40"
+      }
+    }
+  ]
+}
